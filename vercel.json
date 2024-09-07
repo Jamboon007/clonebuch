@@ -1,9 +1,9 @@
 {
-    "builds" = [{
+    "builds": [{
         "src": "web_comsci/wsgi.py",
         "use": "@vercel/python"
     }],
-    "routes" = [{
+    "routes": [{
         "src": "/(.*)",
         "dest": "web_comsci/wsgi.py"
     }]

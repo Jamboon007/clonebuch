@@ -1,6 +1,9 @@
 from django.urls import path 
-from myweb.views import index
+from . import views
 
 urlpatterns = [
-    path("", index, name='index'),
+    path("", views.index, name="index"),
+    path("about", views.story, name="story"),
+    path("contact", views.contact, name="contact"),
+
 ]

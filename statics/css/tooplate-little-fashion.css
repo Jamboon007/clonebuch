@@ -166,6 +166,13 @@ a:hover {
   font-weight: var(--font-weight-thin);
 }
 
+.lead1 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-thin);
+}
+
 b,
 strong {
   font-weight: var(--font-weight-bold);

@@ -740,6 +740,12 @@ section {
   font-style: normal;
 }
 
+.ple4{
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 .about .nav-pills .nav-link {
   color: var(--grey-color);
   font-size: 18px;

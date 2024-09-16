@@ -1,11 +1,15 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
+import requests
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    response=requests.get('https://buchpawares.github.io/my_measure/measure.json').json()
+    return render(request, 'index.html',{'response':response})
 
 def story(request):
-    return render(request, 'story.html')
+    response=requests.get('https://buchpawares.github.io/my_measure/measure.json').json()
+    return render(request, 'story.html',{'response':response})
 
 def contact(request):
-    return render(request, 'contact.html')
+    response=requests.get('https://buchpawares.github.io/my_measure/measure.json').json()
+    return render(request, 'contact.html',{'response':response})

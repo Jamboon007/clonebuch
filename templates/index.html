@@ -52,7 +52,10 @@
             </div>
         </div>
     </div>
-
+    <strong>List All</strong>
+    {% for i in response %}
+        {{i.id}}
+    {% endfor %}
 </section>
 
 {% endblock  %}

@@ -142,10 +142,15 @@
         <div class="modal-content border-0">
             <div class="modal-header flex-column">
                 <h3 class="modal-title" id="exampleModalLabel">1</h3>
-
                 <h6 class="text-muted">Product, VP</h6>
-
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <iframe
+                    width="450"
+                    height="250"
+                    frameborder="0" style="border:0"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyATRuubv3L9TEtdgtTk0tAziudpHnTiQys&q={{i.name}}&center={{i.address}},{{i.lot}}&zoom=10"allowfullscreen>
+                </iframe>
             </div>
 
             <div class="modal-body">
@@ -174,5 +179,12 @@
         </div>
     </div>
 </div>
+<iframe
+                    width="450"
+                    height="250"
+                    frameborder="0" style="border:0"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyATRuubv3L9TEtdgtTk0tAziudpHnTiQys&q={{i.name}}&center={{i.address}},{{i.lot}}&zoom=10"allowfullscreen>
+                </iframe>
 {% endfor %}
 {% endblock  %}

@@ -13,16 +13,13 @@ def contact(request):
     return render(request, 'contact.html')
 
 def ppg(request):
-    # ดึงข้อมูลจาก API
     data = requests.get('https://buchpawares.github.io/my_measure/measure.json').json()
-    
     result = None
     if request.method == 'POST':
         query = request.POST.get('na', '')
-        # กรองข้อมูลจากตัวแปร data
         filtered_data = [item for item in data if query.lower() in item['name'].lower()]
 
         if filtered_data:
-            result = filtered_data[0]  # เอาผลลัพธ์ที่กรองได้อันแรก  
+            result = filtered_data[0]
 
     return render(request, 'story.html',{'result': result})

@@ -818,6 +818,15 @@ button:focus:not(:focus-visible) {
   padding: 2rem 0;
 }
 
+.gqpt {
+  background-color: #d49919; /* สีเทาอ่อน */
+  color: #fff; /* ตัวอักษรสีขาว */
+  border: none; /* ไม่มีกรอบ */
+}
+.gqpt:hover {
+  background-color: #ffae00; 
+  color: #fff;
+}
 /*---------------------------------------
   TEAM MEMBERS               
 -----------------------------------------*/

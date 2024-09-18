@@ -5,5 +5,5 @@ urlpatterns = [
     path("about", views.index, name="index"),
     path("", views.story, name="story"),
     path("contact", views.contact, name="contact"),
-
+    path("ppg", views.ppg, name='ppg'),
 ]

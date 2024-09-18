@@ -49,7 +49,7 @@ html {
 }
 
 body {
-    background: var(--white-color);
+    background: var(--black-color);
     font-family: var(--body-font-family);    
     position: relative;
 }
